@@ -1,6 +1,61 @@
 {
   "manifestVersion": "3.2",
-  "proxies": [],
+  "admin": {
+    "address": "0x1fbA8fB24F52D5f35fe21d75341C89606A9c121A",
+    "txHash": "0x835a87f6745a86c0743ff01c9867e536d80cfd4fbeb86df3bb6ea78106573f0e",
+    "deployTransaction": {
+      "hash": "0x835a87f6745a86c0743ff01c9867e536d80cfd4fbeb86df3bb6ea78106573f0e",
+      "type": 0,
+      "accessList": null,
+      "blockHash": null,
+      "blockNumber": null,
+      "transactionIndex": null,
+      "confirmations": 0,
+      "from": "0x172A25d57dA59AB86792FB8cED103ad871CBEf34",
+      "gasPrice": {
+        "type": "BigNumber",
+        "hex": "0x77350e56"
+      },
+      "gasLimit": {
+        "type": "BigNumber",
+        "hex": "0x0762b4"
+      },
+      "to": null,
+      "value": {
+        "type": "BigNumber",
+        "hex": "0x00"
+      },
+      "nonce": 77,
+      "data": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610759806100616000396000f3fe60806040526004361061007b5760003560e01c80639623609d1161004e5780639623609d1461011157806399a88ec414610124578063f2fde38b14610144578063f3b7dead146101645761007b565b8063204e1c7a14610080578063715018a6146100bc5780637eff275e146100d35780638da5cb5b146100f3575b600080fd5b34801561008c57600080fd5b506100a061009b366004610515565b610184565b6040516001600160a01b03909116815260200160405180910390f35b3480156100c857600080fd5b506100d1610215565b005b3480156100df57600080fd5b506100d16100ee366004610554565b610292565b3480156100ff57600080fd5b506000546001600160a01b03166100a0565b6100d161011f36600461058c565b61031c565b34801561013057600080fd5b506100d161013f366004610554565b6103ad565b34801561015057600080fd5b506100d161015f366004610515565b610405565b34801561017057600080fd5b506100a061017f366004610515565b6104ef565b6000806000836001600160a01b03166040516101aa90635c60da1b60e01b815260040190565b600060405180830381855afa9150503d80600081146101e5576040519150601f19603f3d011682016040523d82523d6000602084013e6101ea565b606091505b5091509150816101f957600080fd5b8080602001905181019061020d9190610538565b949350505050565b6000546001600160a01b031633146102485760405162461bcd60e51b815260040161023f906106c0565b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146102bc5760405162461bcd60e51b815260040161023f906106c0565b6040516308f2839760e41b81526001600160a01b038281166004830152831690638f283970906024015b600060405180830381600087803b15801561030057600080fd5b505af1158015610314573d6000803e3d6000fd5b505050505050565b6000546001600160a01b031633146103465760405162461bcd60e51b815260040161023f906106c0565b60405163278f794360e11b81526001600160a01b03841690634f1ef286903490610376908690869060040161065d565b6000604051808303818588803b15801561038f57600080fd5b505af11580156103a3573d6000803e3d6000fd5b5050505050505050565b6000546001600160a01b031633146103d75760405162461bcd60e51b815260040161023f906106c0565b604051631b2ce7f360e11b81526001600160a01b038281166004830152831690633659cfe6906024016102e6565b6000546001600160a01b0316331461042f5760405162461bcd60e51b815260040161023f906106c0565b6001600160a01b0381166104945760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161023f565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000806000836001600160a01b03166040516101aa906303e1469160e61b815260040190565b600060208284031215610526578081fd5b81356105318161070b565b9392505050565b600060208284031215610549578081fd5b81516105318161070b565b60008060408385031215610566578081fd5b82356105718161070b565b915060208301356105818161070b565b809150509250929050565b6000806000606084860312156105a0578081fd5b83356105ab8161070b565b925060208401356105bb8161070b565b9150604084013567ffffffffffffffff808211156105d7578283fd5b818601915086601f8301126105ea578283fd5b8135818111156105fc576105fc6106f5565b604051601f8201601f19908116603f01168101908382118183101715610624576106246106f5565b8160405282815289602084870101111561063c578586fd5b82602086016020830137856020848301015280955050505050509250925092565b600060018060a01b038416825260206040818401528351806040850152825b818110156106985785810183015185820160600152820161067c565b818111156106a95783606083870101525b50601f01601f191692909201606001949350505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b038116811461072057600080fd5b5056fea2646970667358221220d849f96f3086b9f82cdcf665adb8c697ace05638da1c7c16ab2d26293717af6764736f6c63430008020033",
+      "r": "0x48ac941289f6c10410d00624f85863a4ab701c04ecda71c95aa1b5ad09038735",
+      "s": "0x619dc462501076a95fb2a5e3847e3932d62b3f3b2bb85f996f989ce0a6a07e39",
+      "v": 42,
+      "creates": "0x1fbA8fB24F52D5f35fe21d75341C89606A9c121A",
+      "chainId": 3
+    }
+  },
+  "proxies": [
+    {
+      "address": "0xD13399935f3aF25f29E27ab789AeA97Cce5d4c86",
+      "txHash": "0x1c8317ab20784efd5fe0521cf66e9b9e68266f785939976fcd707fc4bdd31963",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xbA79203AaC4262e302Dd4d13a3f9f247c2894a9b",
+      "txHash": "0x0ee83b45c3f0a9bf176602836bbdf1cf2aa3af68f64781fcdde4b161a3c968cc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x013dE7AE076A1258C447984B371829b24d65dA69",
+      "txHash": "0x5dd6a675fd2d72206a76b748f2ffae5bbe88c56254467a15cec0976295b114ff",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xf9d83e63Fc708716176C32aE51Db683F5B57D36C",
+      "txHash": "0x6fe722d9168241eac684062d5c82f40c78aca6b292e95c52c19a8b4ba164ee48",
+      "kind": "transparent"
+    }
+  ],
   "impls": {
     "aa42b75f3599a8ef03e1e44acbfaaee89245d12e1c033ecb594116b0fba5308b": {
       "address": "0x1a3e57E056Da691574d579fd393065a5bD850eCa",
@@ -71,6 +126,1069 @@
           },
           "t_bool": {
             "label": "bool"
+          }
+        }
+      }
+    },
+    "087d6909bb4992350c631ed225e823c84a0ce5514020657b8a53ab994e00ae09": {
+      "address": "0xA30CEdB1a94d2C840dab57Be11359C1299F44529",
+      "txHash": "0xbdec6163d3a7f9383ba1eaba4c5a37bd235f7608066eaf563852ce1bc14b0a40",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC165Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:35"
+          },
+          {
+            "contract": "ERC721Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\ERC721Upgradeable.sol:24"
+          },
+          {
+            "contract": "ERC721Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\ERC721Upgradeable.sol:27"
+          },
+          {
+            "contract": "ERC721Upgradeable",
+            "label": "_owners",
+            "type": "t_mapping(t_uint256,t_address)",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\ERC721Upgradeable.sol:30"
+          },
+          {
+            "contract": "ERC721Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\ERC721Upgradeable.sol:33"
+          },
+          {
+            "contract": "ERC721Upgradeable",
+            "label": "_tokenApprovals",
+            "type": "t_mapping(t_uint256,t_address)",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\ERC721Upgradeable.sol:36"
+          },
+          {
+            "contract": "ERC721Upgradeable",
+            "label": "_operatorApprovals",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\ERC721Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC721Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)44_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\ERC721Upgradeable.sol:383"
+          },
+          {
+            "contract": "ERC721EnumerableUpgradeable",
+            "label": "_ownedTokens",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\extensions\\ERC721EnumerableUpgradeable.sol:24"
+          },
+          {
+            "contract": "ERC721EnumerableUpgradeable",
+            "label": "_ownedTokensIndex",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\extensions\\ERC721EnumerableUpgradeable.sol:27"
+          },
+          {
+            "contract": "ERC721EnumerableUpgradeable",
+            "label": "_allTokens",
+            "type": "t_array(t_uint256)dyn_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\extensions\\ERC721EnumerableUpgradeable.sol:30"
+          },
+          {
+            "contract": "ERC721EnumerableUpgradeable",
+            "label": "_allTokensIndex",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\extensions\\ERC721EnumerableUpgradeable.sol:33"
+          },
+          {
+            "contract": "ERC721EnumerableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)46_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\extensions\\ERC721EnumerableUpgradeable.sol:168"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_dropKit",
+            "type": "t_contract(IDropKit)3308",
+            "src": "contracts\\DropKitCollection.sol:21"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_mintCount",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\DropKitCollection.sol:23"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_totalRevenue",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:24"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_merkleRoot",
+            "type": "t_bytes32",
+            "src": "contracts\\DropKitCollection.sol:25"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_tokenBaseURI",
+            "type": "t_string_storage",
+            "src": "contracts\\DropKitCollection.sol:26"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_treasury",
+            "type": "t_address",
+            "src": "contracts\\DropKitCollection.sol:27"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_maxAmount",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:30"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_maxPerMint",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:31"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_maxPerWallet",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:32"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_price",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:33"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_startPrice",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:36"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_endPrice",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:37"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_duration",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:38"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_startedAt",
+            "type": "t_uint256",
+            "src": "contracts\\DropKitCollection.sol:39"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_presaleActive",
+            "type": "t_bool",
+            "src": "contracts\\DropKitCollection.sol:42"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_saleActive",
+            "type": "t_bool",
+            "src": "contracts\\DropKitCollection.sol:43"
+          },
+          {
+            "contract": "DropKitCollection",
+            "label": "_auctionActive",
+            "type": "t_bool",
+            "src": "contracts\\DropKitCollection.sol:44"
+          }
+        ],
+        "types": {
+          "t_contract(IDropKit)3308": {
+            "label": "contract IDropKit"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+            "label": "mapping(address => mapping(uint256 => uint256))"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_array(t_uint256)46_storage": {
+            "label": "uint256[46]"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_array(t_uint256)44_storage": {
+            "label": "uint256[44]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "88d057cd541215e6396048e41c7354e16ada64201d9361e1d091815cf7b7c536": {
+      "address": "0x1E47BbE8D9d6a995118ad40Cb366f5AFb3bf260B",
+      "txHash": "0x40d6640fe4a7144e300c7fcc19a6b588fe41c0f50ac9f23c607aa2064bc04c28",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_treasury",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:25"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_collections",
+            "type": "t_struct(AddressSet)1143_storage",
+            "src": "contracts\\NiftyKit.sol:26"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_rateOverride",
+            "type": "t_mapping(t_address,t_struct(Entry)1391_storage)",
+            "src": "contracts\\NiftyKit.sol:28"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_fees",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:30"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_feesClaimed",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:31"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_partners",
+            "type": "t_mapping(t_address,t_struct(Entry)1391_storage)",
+            "src": "contracts\\NiftyKit.sol:34"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_referrals",
+            "type": "t_mapping(t_address,t_address)",
+            "src": "contracts\\NiftyKit.sol:36"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_partnersBalance",
+            "type": "t_uint256",
+            "src": "contracts\\NiftyKit.sol:39"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_partnerFees",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:41"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_partnerFeesClaimed",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:43"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_implementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:46"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_dropImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:48"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_tokenImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:49"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_trustedForwarder",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:52"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(AddressSet)1143_storage": {
+            "label": "struct EnumerableSetUpgradeable.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)868_storage"
+              }
+            ]
+          },
+          "t_struct(Set)868_storage": {
+            "label": "struct EnumerableSetUpgradeable.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)"
+              }
+            ]
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_struct(Entry)1391_storage)": {
+            "label": "mapping(address => struct NiftyKit.Entry)"
+          },
+          "t_struct(Entry)1391_storage": {
+            "label": "struct NiftyKit.Entry",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_address)": {
+            "label": "mapping(address => address)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "a586a9bc58d5e8832417778c31f796cdc3cc98301c049d1ee5b6a8664a15350b": {
+      "address": "0x8DEf25578E3A666Fda2cD5D4ADB7aF08d2EB9e3b",
+      "txHash": "0x8ada999b8191aea035fe698a0eeca186065d5ab60c40d94faa145a3c1acfb057",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_treasury",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:25"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_collections",
+            "type": "t_struct(AddressSet)1143_storage",
+            "src": "contracts\\NiftyKit.sol:26"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_rateOverride",
+            "type": "t_mapping(t_address,t_struct(Entry)1391_storage)",
+            "src": "contracts\\NiftyKit.sol:28"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_fees",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:30"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_feesClaimed",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:31"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_dropImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:33"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_tokenImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:34"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(AddressSet)1143_storage": {
+            "label": "struct EnumerableSetUpgradeable.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)868_storage"
+              }
+            ]
+          },
+          "t_struct(Set)868_storage": {
+            "label": "struct EnumerableSetUpgradeable.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)"
+              }
+            ]
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_struct(Entry)1391_storage)": {
+            "label": "mapping(address => struct NiftyKit.Entry)"
+          },
+          "t_struct(Entry)1391_storage": {
+            "label": "struct NiftyKit.Entry",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "4ea062db5444f5af98345d601d3823bb47c912ab1bbe9e83d093106a56a33fcc": {
+      "address": "0x10207ADAb4e348EeE3B9133801BEBDD4FC0F5Bc2",
+      "txHash": "0x1d0d877fc3f9f47f4a8b8643f8dbe61a75f7dcad84abb5d863035b41b56f2a43",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_treasury",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:25"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_collections",
+            "type": "t_struct(AddressSet)2881_storage",
+            "src": "contracts\\NiftyKit.sol:26"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_rateOverride",
+            "type": "t_mapping(t_address,t_struct(Entry)5064_storage)",
+            "src": "contracts\\NiftyKit.sol:28"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_fees",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:30"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_feesClaimed",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:31"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_dropImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:33"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_tokenImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:34"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(AddressSet)2881_storage": {
+            "label": "struct EnumerableSetUpgradeable.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)2606_storage"
+              }
+            ]
+          },
+          "t_struct(Set)2606_storage": {
+            "label": "struct EnumerableSetUpgradeable.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)"
+              }
+            ]
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_struct(Entry)5064_storage)": {
+            "label": "mapping(address => struct NiftyKit.Entry)"
+          },
+          "t_struct(Entry)5064_storage": {
+            "label": "struct NiftyKit.Entry",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "0c2b93177367661d465aefade148f9589d3c9e2eb256cc576208914ff3ebb878": {
+      "address": "0xDDa0AB9aAe182F5548D92a9cFC67D12d1b75AeCC",
+      "txHash": "0x13ac3a4ed1520d2b2e05b389004702279b2289c731e57ef59aaf5e1ca0c4b393",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_treasury",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:25"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_collections",
+            "type": "t_struct(AddressSet)1143_storage",
+            "src": "contracts\\NiftyKit.sol:26"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_rateOverride",
+            "type": "t_mapping(t_address,t_struct(Entry)1391_storage)",
+            "src": "contracts\\NiftyKit.sol:28"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_fees",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:30"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_feesClaimed",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:31"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_dropImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:33"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_tokenImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:34"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_mutateImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:35"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(AddressSet)1143_storage": {
+            "label": "struct EnumerableSetUpgradeable.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)868_storage"
+              }
+            ]
+          },
+          "t_struct(Set)868_storage": {
+            "label": "struct EnumerableSetUpgradeable.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)"
+              }
+            ]
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_struct(Entry)1391_storage)": {
+            "label": "mapping(address => struct NiftyKit.Entry)"
+          },
+          "t_struct(Entry)1391_storage": {
+            "label": "struct NiftyKit.Entry",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "d45681106bcb52bc10f2ba8ea9a30b6fe724e7de12998500d7c21b8783bd55a8": {
+      "address": "0xb71B5466511C9b188928F2f0FF59811E9efe0315",
+      "txHash": "0x2795c5d9ed623600867d98b867ba287a9262fc4e8ed6a0ce3c76bc0ecff17a7a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_treasury",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:26"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_collections",
+            "type": "t_struct(AddressSet)2881_storage",
+            "src": "contracts\\NiftyKit.sol:27"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_rateOverride",
+            "type": "t_mapping(t_address,t_struct(Entry)5065_storage)",
+            "src": "contracts\\NiftyKit.sol:29"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_fees",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:31"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_feesClaimed",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:32"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_dropImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:34"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_tokenImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:35"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_mutateImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:36"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(AddressSet)2881_storage": {
+            "label": "struct EnumerableSetUpgradeable.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)2606_storage"
+              }
+            ]
+          },
+          "t_struct(Set)2606_storage": {
+            "label": "struct EnumerableSetUpgradeable.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)"
+              }
+            ]
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_struct(Entry)5065_storage)": {
+            "label": "mapping(address => struct NiftyKit.Entry)"
+          },
+          "t_struct(Entry)5065_storage": {
+            "label": "struct NiftyKit.Entry",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
           }
         }
       }
