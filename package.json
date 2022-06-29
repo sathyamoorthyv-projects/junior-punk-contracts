@@ -8,8 +8,10 @@
   },
   "scripts": {
     "test": "npm run clean && hardhat test",
-    "build": "npm run clean && hardhat compile --network testnet",
-    "deploy": "hardhat run scripts/deploy.js --network testnet",
+    "build": "npm run clean && hardhat compile --network rinkeby",
+    "deploy": "hardhat run scripts/deploy.js --network rinkeby",
+    "deploy-kit": "hardhat run scripts/deploy-kit.js --network rinkeby",
+    "deploy-actor": "hardhat run scripts/deploy-actor.js --network rinkeby",
     "lint": "prettier-standard --format",
     "clean": "rimraf cache artifacts"
   },
