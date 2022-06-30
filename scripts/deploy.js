@@ -3,7 +3,7 @@ const hre = require('hardhat')
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay * 1000));
 
-async function main () {
+async function main() {
   const ethers = hre.ethers
   const upgrades = hre.upgrades;
 
@@ -12,52 +12,87 @@ async function main () {
   const signer = (await ethers.getSigners())[0]
   console.log('signer:', await signer.getAddress())
 
-  const feeAddress = "0x885A73F551FcC946C688eEFbC10023f4B7Cc48f3";
-  const fee = 250;
-  const wbnbAddress = {
-    4: "0xF14d7EA41EABcf949Eef74312F9eD4bF7Dd503a5",
-    97: "0x171BB6a358B7E769B1eB3E7b2Aab779423CBeee0",
-    56: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
-    137: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
-  };
-  
-
   const deployFlag = {
-    deployNFT: false,
-    deployNFTFactory: false,
-    deployNFTMarketPlace: true,
-    upgradeNFTMarketPlace: false,
+    deployNft: false,
+    cloneNft: true
   };
-  
-  /**
-   *  Deploy Nftology NFT MarketPlace
-   */
-  if(deployFlag.deployNFTMarketPlace) {
-    const NftologyMarketPlace = await ethers.getContractFactory('BattleOfGuardiansRentManager', {
-      signer: (await ethers.getSigners())[0]
-    })
-
-    const marketPlaceContract = await upgrades.deployProxy(NftologyMarketPlace, 
-      [feeAddress, fee, wbnbAddress[process.env.CHAIN_ID]],
-      {initializer: 'initialize'});
-    await marketPlaceContract.deployed()
-  
-    console.log('Nftology MarketPlace deployed to:', marketPlaceContract.address)
-  } 
 
   /**
-   *  Upgrade Nftology MarketPlace
+   * Deploy NFT
    */
-  if(deployFlag.upgradeNFTMarketPlace) {
-	const nftMarketPlace = "0x7BF883B2673E1a7F4BB0dde2777F620228704c49";
+  if (deployFlag.deployNft) {
+    const DropCollection = await ethers.getContractFactory('DropKitCollection', { signer: (await ethers.getSigners())[0] })
 
-    const NftologyMarketPlaceV2 = await ethers.getContractFactory('BattleOfGuardiansRentManager', {
-      signer: (await ethers.getSigners())[0]
+    const dropCollection = await DropCollection.deploy();
+    await dropCollection.deployed();
+    await sleep(30);
+    console.log("DropCollection deployed to: ", dropCollection.address);
+
+    await hre.run('verify:verify', {
+      address: dropCollection.address,
+      constructorArguments: []
     })
 
-    const marketPlaceContract = await upgrades.upgradeProxy(nftMarketPlace, NftologyMarketPlaceV2);
-    console.log('Nftology MarketPlace V2 upgraded: ', marketPlaceContract.address)
-    
+    console.log("DropCollection at: ", dropCollection.address, " verified");
+
+    const MutateCollection = await ethers.getContractFactory('MutateCollection', { signer: (await ethers.getSigners())[0] })
+
+    const mutateCollection = await MutateCollection.deploy();
+    await mutateCollection.deployed();
+    await sleep(30);
+    console.log("MutateCollection deployed to: ", mutateCollection.address);
+
+    await hre.run('verify:verify', {
+      address: mutateCollection.address,
+      constructorArguments: []
+    })
+
+    console.log("MutateCollection at: ", mutateCollection.address, " verified");
+  }
+
+  /**
+   * Clone NFT from Factory
+   */
+  if (deployFlag.cloneNft) {
+    const nftData = {
+      botl: {
+        name: "HODL Bottles",
+        symbol: "BOTL",
+        treasury: "0x19E53469BdfD70e103B18D9De7627d88c4506DF2"
+      },
+      jpnk: {
+        name: "Junior Punks",
+        symbol: "JPNK",
+        treasury: "0x19E53469BdfD70e103B18D9De7627d88c4506DF2"
+      },
+      jpnk3d: {
+        name: "Junior Punks 3D",
+        symbol: "JPNK3D",
+        treasury: "0x19E53469BdfD70e103B18D9De7627d88c4506DF2",
+        mutateActor: "0x0000000000000000000000000000000000000000"
+      },
+    }
+    const niftyKitAddress = '0x286eD0be3E72E6B9f90a092C3467a5F6D7B9fc6e';
+    const NiftyKit = await ethers.getContractFactory('NiftyKit', { signer: (await ethers.getSigners())[0] });
+    const niftyKit = await NiftyKit.attach(niftyKitAddress);
+
+    {
+      const tx = await niftyKit.createDropCollection(nftData.jpnk.name, nftData.jpnk.symbol, nftData.jpnk.treasury);
+      await tx.wait();
+      console.log('Junior Punks NFT Cloned');
+    }
+
+    {
+      const tx = await niftyKit.createDropCollection(nftData.botl.name, nftData.botl.symbol, nftData.botl.treasury);
+      await tx.wait();
+      console.log('HODL Bottle NFT Cloned');
+    }
+
+    {
+      const tx = await niftyKit.createMutateCollection(nftData.jpnk3d.name, nftData.jpnk3d.symbol, nftData.jpnk3d.mutateActor, nftData.jpnk3d.treasury);
+      await tx.wait();
+      console.log('Junior Punks 3D NFT Cloned');
+    }
   }
 }
 
