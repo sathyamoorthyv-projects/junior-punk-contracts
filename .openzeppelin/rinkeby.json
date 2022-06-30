@@ -1,0 +1,625 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x3FeE164919Ec6138b3127311Ff49f2Dae206D8EF",
+    "txHash": "0x2e9a00ddacf667c0a49586e7c6df102172d7c34ba811db7a7f9800fc52242f55",
+    "deployTransaction": {
+      "hash": "0x2e9a00ddacf667c0a49586e7c6df102172d7c34ba811db7a7f9800fc52242f55",
+      "type": 0,
+      "accessList": null,
+      "blockHash": null,
+      "blockNumber": null,
+      "transactionIndex": null,
+      "confirmations": 0,
+      "from": "0x172A25d57dA59AB86792FB8cED103ad871CBEf34",
+      "gasPrice": {
+        "type": "BigNumber",
+        "hex": "0x59682f08"
+      },
+      "gasLimit": {
+        "type": "BigNumber",
+        "hex": "0x0762b4"
+      },
+      "to": null,
+      "value": {
+        "type": "BigNumber",
+        "hex": "0x00"
+      },
+      "nonce": 201,
+      "data": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610759806100616000396000f3fe60806040526004361061007b5760003560e01c80639623609d1161004e5780639623609d1461011157806399a88ec414610124578063f2fde38b14610144578063f3b7dead146101645761007b565b8063204e1c7a14610080578063715018a6146100bc5780637eff275e146100d35780638da5cb5b146100f3575b600080fd5b34801561008c57600080fd5b506100a061009b366004610515565b610184565b6040516001600160a01b03909116815260200160405180910390f35b3480156100c857600080fd5b506100d1610215565b005b3480156100df57600080fd5b506100d16100ee366004610554565b610292565b3480156100ff57600080fd5b506000546001600160a01b03166100a0565b6100d161011f36600461058c565b61031c565b34801561013057600080fd5b506100d161013f366004610554565b6103ad565b34801561015057600080fd5b506100d161015f366004610515565b610405565b34801561017057600080fd5b506100a061017f366004610515565b6104ef565b6000806000836001600160a01b03166040516101aa90635c60da1b60e01b815260040190565b600060405180830381855afa9150503d80600081146101e5576040519150601f19603f3d011682016040523d82523d6000602084013e6101ea565b606091505b5091509150816101f957600080fd5b8080602001905181019061020d9190610538565b949350505050565b6000546001600160a01b031633146102485760405162461bcd60e51b815260040161023f906106c0565b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146102bc5760405162461bcd60e51b815260040161023f906106c0565b6040516308f2839760e41b81526001600160a01b038281166004830152831690638f283970906024015b600060405180830381600087803b15801561030057600080fd5b505af1158015610314573d6000803e3d6000fd5b505050505050565b6000546001600160a01b031633146103465760405162461bcd60e51b815260040161023f906106c0565b60405163278f794360e11b81526001600160a01b03841690634f1ef286903490610376908690869060040161065d565b6000604051808303818588803b15801561038f57600080fd5b505af11580156103a3573d6000803e3d6000fd5b5050505050505050565b6000546001600160a01b031633146103d75760405162461bcd60e51b815260040161023f906106c0565b604051631b2ce7f360e11b81526001600160a01b038281166004830152831690633659cfe6906024016102e6565b6000546001600160a01b0316331461042f5760405162461bcd60e51b815260040161023f906106c0565b6001600160a01b0381166104945760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161023f565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000806000836001600160a01b03166040516101aa906303e1469160e61b815260040190565b600060208284031215610526578081fd5b81356105318161070b565b9392505050565b600060208284031215610549578081fd5b81516105318161070b565b60008060408385031215610566578081fd5b82356105718161070b565b915060208301356105818161070b565b809150509250929050565b6000806000606084860312156105a0578081fd5b83356105ab8161070b565b925060208401356105bb8161070b565b9150604084013567ffffffffffffffff808211156105d7578283fd5b818601915086601f8301126105ea578283fd5b8135818111156105fc576105fc6106f5565b604051601f8201601f19908116603f01168101908382118183101715610624576106246106f5565b8160405282815289602084870101111561063c578586fd5b82602086016020830137856020848301015280955050505050509250925092565b600060018060a01b038416825260206040818401528351806040850152825b818110156106985785810183015185820160600152820161067c565b818111156106a95783606083870101525b50601f01601f191692909201606001949350505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b038116811461072057600080fd5b5056fea2646970667358221220d849f96f3086b9f82cdcf665adb8c697ace05638da1c7c16ab2d26293717af6764736f6c63430008020033",
+      "r": "0x767a9376b1c4a47190a0d12a4147f0fe6d1e5947597e8895f01c2204b33de843",
+      "s": "0x26dc3d3f5aca908443a27b873bb4aefa8470ec319755e31b24d4413c7499c2dd",
+      "v": 44,
+      "creates": "0x3FeE164919Ec6138b3127311Ff49f2Dae206D8EF",
+      "chainId": 4
+    }
+  },
+  "proxies": [
+    {
+      "address": "0x6629df81C0B9897ccC04F58AC42cA71fff244817",
+      "txHash": "0x0e552ceb3a8a38e1cf833a6dc72e58f2aa3f00e0168d459cbebae1409c884ba0",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x286eD0be3E72E6B9f90a092C3467a5F6D7B9fc6e",
+      "txHash": "0xf2328af94e6a33d150679364ec24c74debf4fa9fe9a702929ee62b416f512003",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x397a2a066E64705d42e5A285cb3eD4F34AAe4FC0",
+      "txHash": "0x5a5bf28a3520d5a5b7a08b27322fdbc5777bb4a7282844cbe039beb55aa02c26",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x99acF5898044Bd52DC4c2875c36270F49B4A5ed4",
+      "txHash": "0xc2661435756f2cfc2c3c2c2bc4080323b11b1f1d818958858f4f33d7a5ac3811",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "d45681106bcb52bc10f2ba8ea9a30b6fe724e7de12998500d7c21b8783bd55a8": {
+      "address": "0xbb0D2C468BcF26D587FCF53c1562B92555854245",
+      "txHash": "0xc6e64979d8c15071b7374b7f399760610724ec98067f0f4c4869c1ef967de004",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_treasury",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:26"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_collections",
+            "type": "t_struct(AddressSet)1143_storage",
+            "src": "contracts\\NiftyKit.sol:27"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_rateOverride",
+            "type": "t_mapping(t_address,t_struct(Entry)1392_storage)",
+            "src": "contracts\\NiftyKit.sol:29"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_fees",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:31"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_feesClaimed",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts\\NiftyKit.sol:32"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_dropImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:34"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_tokenImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:35"
+          },
+          {
+            "contract": "NiftyKit",
+            "label": "_mutateImplementation",
+            "type": "t_address",
+            "src": "contracts\\NiftyKit.sol:36"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(AddressSet)1143_storage": {
+            "label": "struct EnumerableSetUpgradeable.AddressSet",
+            "members": [
+              {
+                "label": "_inner",
+                "type": "t_struct(Set)868_storage"
+              }
+            ]
+          },
+          "t_struct(Set)868_storage": {
+            "label": "struct EnumerableSetUpgradeable.Set",
+            "members": [
+              {
+                "label": "_values",
+                "type": "t_array(t_bytes32)dyn_storage"
+              },
+              {
+                "label": "_indexes",
+                "type": "t_mapping(t_bytes32,t_uint256)"
+              }
+            ]
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_struct(Entry)1392_storage)": {
+            "label": "mapping(address => struct NiftyKit.Entry)"
+          },
+          "t_struct(Entry)1392_storage": {
+            "label": "struct NiftyKit.Entry",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "4f73463c9a3faa282902b6028c985e3727aa85b06acb2d00df08ea39d115bcb8": {
+      "address": "0x6fD22C13BC387F1F5EfD403BD9eAa53AF14F392C",
+      "txHash": "0x4b2c506d94e98e99094c92c42cdafc59de85eaf7cf546e58e82e87bb70f43b41",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_burnWallet",
+            "type": "t_address",
+            "src": "contracts\\MutateActor.sol:31"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_curRule",
+            "type": "t_struct(RuleEntry)4236_storage",
+            "src": "contracts\\MutateActor.sol:33"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_allRules",
+            "type": "t_array(t_struct(RuleEntry)4236_storage)dyn_storage",
+            "src": "contracts\\MutateActor.sol:34"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_mutateHistory",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(HistoryEntry)4243_storage)dyn_storage))",
+            "src": "contracts\\MutateActor.sol:36"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_checkMutated",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts\\MutateActor.sol:38"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(RuleEntry)4236_storage": {
+            "label": "struct MutateActor.RuleEntry",
+            "members": [
+              {
+                "label": "origin",
+                "type": "t_address"
+              },
+              {
+                "label": "catalyst",
+                "type": "t_address"
+              },
+              {
+                "label": "outcome",
+                "type": "t_address"
+              }
+            ]
+          },
+          "t_array(t_struct(RuleEntry)4236_storage)dyn_storage": {
+            "label": "struct MutateActor.RuleEntry[]"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(HistoryEntry)4243_storage)dyn_storage))": {
+            "label": "mapping(address => mapping(address => struct MutateActor.HistoryEntry[]))"
+          },
+          "t_mapping(t_address,t_array(t_struct(HistoryEntry)4243_storage)dyn_storage)": {
+            "label": "mapping(address => struct MutateActor.HistoryEntry[])"
+          },
+          "t_array(t_struct(HistoryEntry)4243_storage)dyn_storage": {
+            "label": "struct MutateActor.HistoryEntry[]"
+          },
+          "t_struct(HistoryEntry)4243_storage": {
+            "label": "struct MutateActor.HistoryEntry",
+            "members": [
+              {
+                "label": "originId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "catalystId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "outcomeId",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "991f559dd935d7dcb4e2a8e318ca9519d38a6b2a0446b114d5cac0c3af6d3693": {
+      "address": "0x8D25Cc2eB3C8094C373545c3dd5E93922cB5a4C3",
+      "txHash": "0x8c5646f6c4c92e1100ff78eada8ed96acb5abdaa8fac8697e4212158020c03f3",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_burnWallet",
+            "type": "t_address",
+            "src": "contracts\\MutateActor.sol:31"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_curRule",
+            "type": "t_struct(RuleEntry)4236_storage",
+            "src": "contracts\\MutateActor.sol:33"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_allRules",
+            "type": "t_array(t_struct(RuleEntry)4236_storage)dyn_storage",
+            "src": "contracts\\MutateActor.sol:34"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_mutateHistory",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(HistoryEntry)4243_storage)dyn_storage))",
+            "src": "contracts\\MutateActor.sol:36"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_checkMutated",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts\\MutateActor.sol:38"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(RuleEntry)4236_storage": {
+            "label": "struct MutateActor.RuleEntry",
+            "members": [
+              {
+                "label": "origin",
+                "type": "t_address"
+              },
+              {
+                "label": "catalyst",
+                "type": "t_address"
+              },
+              {
+                "label": "outcome",
+                "type": "t_address"
+              }
+            ]
+          },
+          "t_array(t_struct(RuleEntry)4236_storage)dyn_storage": {
+            "label": "struct MutateActor.RuleEntry[]"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(HistoryEntry)4243_storage)dyn_storage))": {
+            "label": "mapping(address => mapping(address => struct MutateActor.HistoryEntry[]))"
+          },
+          "t_mapping(t_address,t_array(t_struct(HistoryEntry)4243_storage)dyn_storage)": {
+            "label": "mapping(address => struct MutateActor.HistoryEntry[])"
+          },
+          "t_array(t_struct(HistoryEntry)4243_storage)dyn_storage": {
+            "label": "struct MutateActor.HistoryEntry[]"
+          },
+          "t_struct(HistoryEntry)4243_storage": {
+            "label": "struct MutateActor.HistoryEntry",
+            "members": [
+              {
+                "label": "originId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "catalystId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "outcomeId",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "c7f8f61e05000d8dff2fafce690a2d51f5fb0cf3739b6d349fb1177bae39739a": {
+      "address": "0x845f3DBd38B1DB031C5c68365E563D34233cCC2f",
+      "txHash": "0x5c47f514e27163bf930cc1ee4322b215e52665015d049c05872acb8e3fddf8a1",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_burnWallet",
+            "type": "t_address",
+            "src": "contracts\\MutateActor.sol:36"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_curRule",
+            "type": "t_struct(RuleEntry)4239_storage",
+            "src": "contracts\\MutateActor.sol:38"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_allRules",
+            "type": "t_array(t_struct(RuleEntry)4239_storage)dyn_storage",
+            "src": "contracts\\MutateActor.sol:39"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_mutateHistory",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(HistoryEntry)4246_storage)dyn_storage))",
+            "src": "contracts\\MutateActor.sol:41"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_checkMutated",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts\\MutateActor.sol:43"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(RuleEntry)4239_storage": {
+            "label": "struct MutateActor.RuleEntry",
+            "members": [
+              {
+                "label": "origin",
+                "type": "t_address"
+              },
+              {
+                "label": "catalyst",
+                "type": "t_address"
+              },
+              {
+                "label": "outcome",
+                "type": "t_address"
+              }
+            ]
+          },
+          "t_array(t_struct(RuleEntry)4239_storage)dyn_storage": {
+            "label": "struct MutateActor.RuleEntry[]"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(HistoryEntry)4246_storage)dyn_storage))": {
+            "label": "mapping(address => mapping(address => struct MutateActor.HistoryEntry[]))"
+          },
+          "t_mapping(t_address,t_array(t_struct(HistoryEntry)4246_storage)dyn_storage)": {
+            "label": "mapping(address => struct MutateActor.HistoryEntry[])"
+          },
+          "t_array(t_struct(HistoryEntry)4246_storage)dyn_storage": {
+            "label": "struct MutateActor.HistoryEntry[]"
+          },
+          "t_struct(HistoryEntry)4246_storage": {
+            "label": "struct MutateActor.HistoryEntry",
+            "members": [
+              {
+                "label": "originId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "catalystId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "outcomeId",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    }
+  }
+}
