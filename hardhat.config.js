@@ -5,9 +5,13 @@ require('@openzeppelin/hardhat-upgrades');
 
 module.exports = {
   networks: {
-    testnet: {
-      url: process.env.NODE_URL,
-      accounts: [process.env.PRIVATE_KEY]
+    ropsten: {
+      url: process.env.ROPSTEN_NODE_URL,
+      accounts: [process.env.ROPSTEN_PRIVATE_KEY]
+    },
+    rinkeby: {
+      url: process.env.RINKEBY_NODE_URL,
+      accounts: [process.env.RINKEBY_PRIVATE_KEY]
     }
   },
   solidity: {
