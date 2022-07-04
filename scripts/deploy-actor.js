@@ -22,7 +22,7 @@ async function main() {
    * Verify MutateActor Implementation
    */
   if (deployFlag.verifyActorImplementation) {
-    const implementationAddress = '0x845f3dbd38b1db031c5c68365e563d34233ccc2f'
+    const implementationAddress = '0x79F0E5E1C7ce8df82958DAaC85250246f4ba5b8a'
     await hre.run('verify:verify', {
       address: implementationAddress,
       constructorArguments: []
@@ -34,9 +34,9 @@ async function main() {
    *  Deploy MutateActor
    */
   if (deployFlag.deployActor) {
-    const originCollection = '0x8262C4d7AC21E49E149F778284660268e0a28b05';
-    const catalystCollection = '0x8b70D0521c43fbd58D741765c6c0de6401F2C4A5';
-    const outcomeCollection = '0x96d20695e7cb3CA373C214886BCA49931f869F85';
+    const originCollection = '0xea9da6349c7004705237AEe68f5e44Ac52cd13D7';
+    const catalystCollection = '0xD1A489b5bB7669F7feaEb9deA19aA1FdF850Fda4';
+    const outcomeCollection = '0xd42a565c768533Cb6b1cF9dA89BB38BfC278D8B5';
     const burnWallet = '0x000000000000000000000000000000000000dEaD';
 
     const MutateActor = await ethers.getContractFactory('MutateActor', {
