@@ -5,6 +5,10 @@ require('@openzeppelin/hardhat-upgrades');
 
 module.exports = {
   networks: {
+    mainnet: {
+      url: process.env.MAINNET_NODE_URL,
+      accounts: [process.env.MAINNET_PRIVATE_KEY]
+    },
     ropsten: {
       url: process.env.ROPSTEN_NODE_URL,
       accounts: [process.env.ROPSTEN_PRIVATE_KEY]
