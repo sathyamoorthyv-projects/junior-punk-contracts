@@ -13,38 +13,38 @@ async function main() {
   console.log('signer:', await signer.getAddress())
 
   const deployFlag = {
-    deployNft: false,
-    cloneNft: true
+    deployNft: true,
+    cloneNft: false
   };
 
   /**
    * Deploy NFT
    */
   if (deployFlag.deployNft) {
-    const DropCollection = await ethers.getContractFactory('DropKitCollection', { signer: (await ethers.getSigners())[0] })
+    // const DropCollection = await ethers.getContractFactory('DropKitCollection', { signer: (await ethers.getSigners())[0] })
 
-    const dropCollection = await DropCollection.deploy();
-    await dropCollection.deployed();
-    await sleep(30);
-    console.log("DropCollection deployed to: ", dropCollection.address);
+    // const dropCollection = await DropCollection.deploy();
+    // await dropCollection.deployed();
+    // await sleep(30);
+    // console.log("DropCollection deployed to: ", dropCollection.address);
 
-    await hre.run('verify:verify', {
-      address: dropCollection.address,
-      constructorArguments: []
-    })
+    // await hre.run('verify:verify', {
+    //   address: dropCollection.address,
+    //   constructorArguments: []
+    // })
 
-    console.log("DropCollection at: ", dropCollection.address, " verified");
+    // console.log("DropCollection at: ", dropCollection.address, " verified");
 
-    const MutateCollection = await ethers.getContractFactory('MutateCollection', { signer: (await ethers.getSigners())[0] })
+    const MutateCollection = await ethers.getContractFactory('contracts\\MutateCollection.sol:MutateCollection', { signer: (await ethers.getSigners())[0] })
 
-    const mutateCollection = await MutateCollection.deploy();
+    const mutateCollection = await MutateCollection.deploy('Junior Punks 3D', 'JPNK3D');
     await mutateCollection.deployed();
     await sleep(30);
     console.log("MutateCollection deployed to: ", mutateCollection.address);
 
     await hre.run('verify:verify', {
       address: mutateCollection.address,
-      constructorArguments: []
+      constructorArguments: ['Junior Punks 3D', 'JPNK3D']
     })
 
     console.log("MutateCollection at: ", mutateCollection.address, " verified");

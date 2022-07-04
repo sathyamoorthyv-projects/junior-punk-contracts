@@ -8,7 +8,7 @@ import "@openzeppelin/contracts-upgradeable/utils/structs/EnumerableSetUpgradeab
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/ClonesUpgradeable.sol";
 import "./interfaces/IBaseCollection.sol";
-import "./interfaces/IMutateCollection.sol";
+import "./interfaces/IMutateCollection-Clonable.sol";
 import "./interfaces/INiftyKit.sol";
 
 contract NiftyKit is Initializable, OwnableUpgradeable, INiftyKit {

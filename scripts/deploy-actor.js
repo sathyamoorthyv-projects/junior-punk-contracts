@@ -13,8 +13,8 @@ async function main() {
   console.log('signer:', await signer.getAddress())
 
   const deployFlag = {
-    verifyActorImplementation: true,
-    deployActor: false,
+    verifyActorImplementation: false,
+    deployActor: true,
     upgradeActor: false,
   };
   
@@ -36,7 +36,7 @@ async function main() {
   if (deployFlag.deployActor) {
     const originCollection = '0x8262C4d7AC21E49E149F778284660268e0a28b05';
     const catalystCollection = '0x8b70D0521c43fbd58D741765c6c0de6401F2C4A5';
-    const outcomeCollection = '0x8dc0A35B6230613d04E7FeFCd4961d3c4ec67228';
+    const outcomeCollection = '0x96d20695e7cb3CA373C214886BCA49931f869F85';
     const burnWallet = '0x000000000000000000000000000000000000dEaD';
 
     const MutateActor = await ethers.getContractFactory('MutateActor', {

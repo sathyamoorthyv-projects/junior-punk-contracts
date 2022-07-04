@@ -1,22 +1,30 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/cryptography/MerkleProofUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import "./interfaces/IDropKit.sol";
 
-contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
-    using Address for address;
-    using MerkleProof for bytes32[];
+contract MutateCollection is
+    ERC721Upgradeable,
+    ERC721EnumerableUpgradeable,
+    OwnableUpgradeable
+{
+    using AddressUpgradeable for address;
+    using SafeMathUpgradeable for uint256;
+    using MerkleProofUpgradeable for bytes32[];
+
+    IDropKit private _dropKit;
 
     mapping(address => uint256) private _mintCount;
     uint256 private _totalRevenue;
     bytes32 private _merkleRoot;
     string private _tokenBaseURI;
-
+    address private _treasury;
     address private _mutateActor;
 
     // Sales Parameters
@@ -40,10 +48,13 @@ contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
     modifier onlyMintable(uint256 numberOfTokens) {
         require(numberOfTokens > 0, "Greater than 0");
         require(
-            _mintCount[_msgSender()] + numberOfTokens <= _maxPerWallet,
+            _mintCount[_msgSender()].add(numberOfTokens) <= _maxPerWallet,
             "Exceeded max"
         );
-        require(totalSupply() + numberOfTokens <= _maxAmount, "Exceeded max");
+        require(
+            totalSupply().add(numberOfTokens) <= _maxAmount,
+            "Exceeded max"
+        );
         _;
     }
 
@@ -55,9 +66,20 @@ contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
         _;
     }
 
-    constructor(string memory name_, string memory symbol_)
-        ERC721(name_, symbol_)
-    {
+    function initialize(
+        string memory name_,
+        string memory symbol_,
+        address mutateActor_,
+        address treasury_
+    ) public initializer {
+        __ERC721_init(name_, symbol_);
+        __ERC721Enumerable_init();
+        __Ownable_init();
+
+        _dropKit = IDropKit(_msgSender());
+        _mutateActor = mutateActor_;
+        _treasury = treasury_;
+
         _mutateActive = true;
         _presaleActive = false;
         _saleActive = false;
@@ -83,7 +105,7 @@ contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
         require(!_mutateActive && _presaleActive, "Not active");
         require(_merkleRoot != "", "Not active");
         require(
-            MerkleProof.verify(
+            MerkleProofUpgradeable.verify(
                 proof,
                 _merkleRoot,
                 keccak256(abi.encodePacked(_msgSender()))
@@ -176,11 +198,15 @@ contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
         _mutateActive = flag;
     }
 
-    function withdraw() external onlyOwner {
+    function withdraw() public {
         require(address(this).balance > 0, "0 balance");
 
         uint256 balance = address(this).balance;
-        Address.sendValue(payable(_msgSender()), balance);
+        uint256 fees = _dropKit.getFees(address(this));
+        AddressUpgradeable.sendValue(payable(_treasury), balance - fees);
+        AddressUpgradeable.sendValue(payable(address(_dropKit)), fees);
+
+        _dropKit.addFeesClaimed(fees);
     }
 
     function setBaseURI(string memory newBaseURI) public onlyOwner {
@@ -193,6 +219,14 @@ contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
 
     function mutateActor() external view returns (address) {
         return _mutateActor;
+    }
+
+    function setTreasury(address newTreasury) public onlyOwner {
+        _treasury = newTreasury;
+    }
+
+    function treasury() external view returns (address) {
+        return _treasury;
     }
 
     function maxAmount() external view returns (uint256) {
@@ -257,19 +291,20 @@ contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
 
     function _purchaseMint(uint256 numberOfTokens, address sender) internal {
         uint256 mintPrice = _auctionActive
-            ? auctionPrice() * numberOfTokens
-            : _price * numberOfTokens;
+            ? auctionPrice().mul(numberOfTokens)
+            : _price.mul(numberOfTokens);
         require(mintPrice <= msg.value, "Value incorrect");
 
-        _totalRevenue = _totalRevenue + msg.value;
-        _mintCount[sender] = _mintCount[sender] + numberOfTokens;
+        _totalRevenue = _totalRevenue.add(msg.value);
+        _dropKit.addFees(msg.value);
+        _mintCount[sender] = _mintCount[sender].add(numberOfTokens);
         _mint(numberOfTokens, sender);
     }
 
     function _mint(uint256 numberOfTokens, address sender) internal {
         require(
             _maxAmount > 0
-                ? totalSupply() + numberOfTokens <= _maxAmount
+                ? totalSupply().add(numberOfTokens) <= _maxAmount
                 : true,
             "Exceeded max"
         );
@@ -285,14 +320,14 @@ contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
         address from,
         address to,
         uint256 tokenId
-    ) internal override(ERC721, ERC721Enumerable) {
+    ) internal override(ERC721Upgradeable, ERC721EnumerableUpgradeable) {
         super._beforeTokenTransfer(from, to, tokenId);
     }
 
     function supportsInterface(bytes4 interfaceId)
         public
         view
-        override(ERC721, ERC721Enumerable)
+        override(ERC721Upgradeable, ERC721EnumerableUpgradeable)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
