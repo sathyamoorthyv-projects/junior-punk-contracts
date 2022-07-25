@@ -39,6 +39,11 @@
       "address": "0xf851e664744391fc7F26e01216be8221457774A5",
       "txHash": "0x165ce98132e9e606c562bd54f2d323b186596e01a1c5234ea692c4ce9e281233",
       "kind": "transparent"
+    },
+    {
+      "address": "0x81533531b5106e5bd9E7F0456B966cAC2881C5A8",
+      "txHash": "0xfbf0c3363649086a0a0410d38be24ffbc1bf7c2abd08529391f3d8bb156de025",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -142,6 +147,143 @@
             "label": "struct MutateActor.HistoryEntry[]"
           },
           "t_struct(HistoryEntry)1627_storage": {
+            "label": "struct MutateActor.HistoryEntry",
+            "members": [
+              {
+                "label": "originId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "catalystId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "outcomeId",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "ff96a162a6ff13ccbb72b960b9598ceeec287b667fd191a7db21746ada66799a": {
+      "address": "0x4760DCeBA19ab5D3A9751147799C4EA5DAA8b8d5",
+      "txHash": "0x97292bf2efa7529941f9bdcad9b95f57a24a18f3c4e279e99a28b6209313cfaf",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_burnWallet",
+            "type": "t_address",
+            "src": "contracts\\MutateActor.sol:36"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_curRule",
+            "type": "t_struct(RuleEntry)6505_storage",
+            "src": "contracts\\MutateActor.sol:38"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_allRules",
+            "type": "t_array(t_struct(RuleEntry)6505_storage)dyn_storage",
+            "src": "contracts\\MutateActor.sol:39"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_mutateHistory",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(HistoryEntry)6512_storage)dyn_storage))",
+            "src": "contracts\\MutateActor.sol:41"
+          },
+          {
+            "contract": "MutateActor",
+            "label": "_checkMutated",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts\\MutateActor.sol:43"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(RuleEntry)6505_storage": {
+            "label": "struct MutateActor.RuleEntry",
+            "members": [
+              {
+                "label": "origin",
+                "type": "t_address"
+              },
+              {
+                "label": "catalyst",
+                "type": "t_address"
+              },
+              {
+                "label": "outcome",
+                "type": "t_address"
+              }
+            ]
+          },
+          "t_array(t_struct(RuleEntry)6505_storage)dyn_storage": {
+            "label": "struct MutateActor.RuleEntry[]"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(HistoryEntry)6512_storage)dyn_storage))": {
+            "label": "mapping(address => mapping(address => struct MutateActor.HistoryEntry[]))"
+          },
+          "t_mapping(t_address,t_array(t_struct(HistoryEntry)6512_storage)dyn_storage)": {
+            "label": "mapping(address => struct MutateActor.HistoryEntry[])"
+          },
+          "t_array(t_struct(HistoryEntry)6512_storage)dyn_storage": {
+            "label": "struct MutateActor.HistoryEntry[]"
+          },
+          "t_struct(HistoryEntry)6512_storage": {
             "label": "struct MutateActor.HistoryEntry",
             "members": [
               {
