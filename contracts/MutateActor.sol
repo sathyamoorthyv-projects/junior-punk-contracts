@@ -137,7 +137,7 @@ contract MutateActor is
         return _checkMutated[hash];
     }
 
-    function updateBurnWalelt(address burnWallet) external onlyOwner {
+    function updateBurnWallet(address burnWallet) external onlyOwner {
         _burnWallet = burnWallet;
     }
 
