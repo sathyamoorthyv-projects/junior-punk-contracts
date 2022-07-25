@@ -42,12 +42,12 @@ async function main() {
     await sleep(30);
     console.log("MutateCollection deployed to: ", mutateCollection.address);
 
-    await hre.run('verify:verify', {
-      address: mutateCollection.address,
-      constructorArguments: ['Junior Punks 3D', 'JPNK3D']
-    })
+    // await hre.run('verify:verify', {
+    //   address: mutateCollection.address,
+    //   constructorArguments: ['Junior Punks 3D', 'JPNK3D']
+    // })
 
-    console.log("MutateCollection at: ", mutateCollection.address, " verified");
+    // console.log("MutateCollection at: ", mutateCollection.address, " verified");
   }
 
   /**
