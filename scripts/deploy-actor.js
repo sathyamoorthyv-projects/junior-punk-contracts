@@ -36,7 +36,7 @@ async function main() {
   if (deployFlag.deployActor) {
     const originCollection = '0xea9da6349c7004705237AEe68f5e44Ac52cd13D7';
     const catalystCollection = '0xD1A489b5bB7669F7feaEb9deA19aA1FdF850Fda4';
-    const outcomeCollection = '0xd42a565c768533Cb6b1cF9dA89BB38BfC278D8B5';
+    const outcomeCollection = '0xc4789792047f96d06906e721d1885ee5cc6ab20f';
     const burnWallet = '0x000000000000000000000000000000000000dEaD';
 
     const MutateActor = await ethers.getContractFactory('MutateActor', {
