@@ -215,19 +215,19 @@ contract MutateCollection is ERC721, ERC721Enumerable, Ownable {
         return _totalRevenue;
     }
 
-    function mutateActive() external view returns (bool) {
+    function mutateActivated() external view returns (bool) {
         return _mutateActive;
     }
 
-    function presaleActive() external view returns (bool) {
+    function presaleActivated() external view returns (bool) {
         return _presaleActive;
     }
 
-    function saleActive() external view returns (bool) {
+    function saleActivated() external view returns (bool) {
         return _saleActive;
     }
 
-    function auctionActive() external view returns (bool) {
+    function auctionActivated() external view returns (bool) {
         return _auctionActive;
     }
 
